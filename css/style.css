@@ -179,7 +179,10 @@ Reponsive
 /*mobile: min-width < 740px*/
    @media only screen and (max-width: 739px){
       
-      
+      body {
+         background-image: url('images/backgroundmobile.svg');
+      }
+
       h1 {
          font-size: 20px;
       }
@@ -247,7 +250,7 @@ Reponsive
    }
 
    .container-flex {
-      background-color: slateblue;
+
    }
 
    
@@ -261,7 +264,6 @@ Reponsive
    }
 
    .makeOrderbox {
-
       height: auto;
    }
 }
