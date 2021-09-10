@@ -1,0 +1,267 @@
+
+/* 
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+
+*/
+
+
+/*font-Family*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+   box-sizing: border-box; 
+   font-family: 'Red Hat Display', sans-serif; 
+}
+
+
+
+body {
+   background-image:url('/images/pattern-background-desktop.svg');
+   background-color: hsl(225, 100%, 94%);
+   /* background-attachment: fixed; */
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+}
+
+body p {
+ font-size: 16px;
+ color: hsl(224, 23%, 55%)
+ 
+}
+
+/* p {
+   color: white;
+} */
+div.container {
+   max-width: 1440px;
+   padding: 20px;
+   /* background-color: red; */
+
+}
+
+
+div.card-box {
+   display: flex;
+   flex-flow:  column nowrap;
+   width: 35%;
+   height: 800px;
+   background-color: hsl(225, 100%, 98%);
+   margin: auto;
+  
+   border-radius: 15px;
+  
+}
+
+.hero-box {
+   width: 100%;
+   height: 200px;
+   background-color: blue;
+   border: none;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   
+}
+
+.hero-box > #hero {
+   width: 100%;
+   height: 200px;
+   border: none;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+}
+
+.box-content {
+   text-align: center;
+   width: 70%;
+   height: 550px;
+   margin: auto;
+   /* background-color: lawngreen; */
+}
+
+/* .text {
+
+} */
+
+.container-flex {
+   display: flex;
+   flex-flow: row wrap;
+   border-radius: 15px;
+   justify-content: center;
+   padding-top: 10px;
+   background-color: hsl(225, 100%, 94%);
+   /* background-color: lightcoral; */
+   align-items: center;
+}
+
+#icon,
+#changebtn {
+ flex:20%;
+}
+
+.price {
+   flex:85%;
+}
+
+a {
+   margin-left: 10px;
+}
+
+
+.makeOrderbox {
+   height: 200px;
+   /* background-color: lightsalmon; */
+   margin-top: 15px;
+   
+}
+
+
+.makeOrderbox > button  {
+   width: 100%;
+   border: none;
+   border-radius: 15px;
+   margin-top: 15px;
+   font-size: 20px;
+   font-weight: 700;
+   background-color: hsl(245, 75%, 52%);
+   box-shadow: 5px 5px 20px hsl(224, 23%, 55%);
+}
+
+.makeOrderbox > button > p {
+   color: hsl(225, 100%, 98%);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+Reponsive
+
+*/
+
+/*mobile: min-width < 740px*/
+   @media only screen and (max-width: 739px){
+      
+      
+      h1 {
+         font-size: 20px;
+      }
+
+      p {
+         font-size: 14px;
+      }
+
+
+      .container {
+         /* background-color: blue; */
+         margin: 0px;
+      }
+
+      div.card-box {
+         width: 100%;
+         text-align: center;
+         align-items: center;
+         height: auto;
+      }
+
+      .card-box > .hero-box,
+      .hero-box > #hero {
+         display: none;
+      }
+
+      .hero-box {
+         height: 0px;
+      }
+
+      div.card-box > h1, div, p, button {
+         margin-top: 20px;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+
+      
+      div.box-content {
+         width: 80%;
+      }
+
+      div.container-flex {
+         flex-flow: column nowrap;
+         justify-content: center;
+      }
+
+      .price,
+      .text,
+      .changebtn {
+         flex: 100%;
+      }
+      
+      button > p {
+         color: red;
+      }
+      
+   }
+
+/* tablet: min-width >= 740px */
+ @media only screen and (min-width: 740px) and (max-width: 1023px){
+  
+   div.card-box {
+      width: 60%;
+   }
+
+   .container-flex {
+      background-color: slateblue;
+   }
+
+   
+} 
+
+/*PC: min-width >= 1024px */
+@media only screen and (min-width: 1024px){
+   div.card-box {
+      width: 37%;
+      height: 600px;
+   }
+
+   .makeOrderbox {
+
+      height: auto;
+   }
+}
