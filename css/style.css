@@ -177,7 +177,7 @@ Reponsive
 */
 
 /*mobile: min-width < 740px*/
-   @media only screen and (max-width: 739px){
+   @media only screen and (max-width: 46.1875em){
       
       body {
          background-image: url('images/backgroundmobile.svg');
@@ -243,7 +243,7 @@ Reponsive
    }
 
 /* tablet: min-width >= 740px */
- @media only screen and (min-width: 740px) and (max-width: 1023px){
+ @media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
   
    div.card-box {
       width: 60%;
@@ -257,7 +257,7 @@ Reponsive
 } 
 
 /*PC: min-width >= 1024px */
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 64em){
    div.card-box {
       width: 37%;
       height: 600px;
